@@ -59,8 +59,8 @@ for month2 in range(1995,2020):
         #print(len(ans))
         for i in range(0,30):
             for j in range(1,21):
-                if(j==1): FILE_ans.write('{:15}'.format(ans[i*22+j]))
-                else: FILE_ans.write('{:8}'.format(ans[i*22+j]))
+                if(j==1): FILE_ans.write('{:15}'.format('"'+ans[i*22+j]+'"'))
+                else: FILE_ans.write('{:8}'.format('"'+ans[i*22+j]+'"'))
             FILE_ans.write("\n")
         
         print("Parse " + str(month2) +" Successfully!")
@@ -86,8 +86,8 @@ for month2 in range(1995,2020):
         #print(len(ans))
         for i in range(0,28):
             for j in range(1,21):
-                if(j==1): FILE_ans.write('{:15}'.format(ans[i*22+j]))
-                else: FILE_ans.write('{:8}'.format(ans[i*22+j]))
+                if(j==1): FILE_ans.write('{:15}'.format('"'+ans[i*22+j]+'"'))
+                else: FILE_ans.write('{:8}'.format('"'+ans[i*22+j]+'"'))
             FILE_ans.write("\n")
         
         print("Parse " + str(month2) + " Successfully!")
